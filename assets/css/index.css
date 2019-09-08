@@ -1,0 +1,193 @@
+.header {
+	border-style: solid;
+	border-width: 2px;
+	background-color: #060607;
+}
+
+.title {
+	font-family: 'Merriweather', serif;
+	font-size:100px;
+	color: #ced9e3;
+	margin-left: 2rem;
+	margin-top: 1rem;
+}
+
+.perfil_descric_img {
+	display: grid;
+	grid-template-rows: 20rem 2.5rem;
+	grid-template-columns: 100%	;
+}
+
+.perfil {
+	margin-left: 38%;
+	margin-top: 2em;
+	border-radius: 50%; 
+}
+
+.descricao_perfil {
+	font-family: 'Noto Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+	margin-top: 1.5em;
+	color: #060607;
+}
+
+.apres {
+	font-family: 'Noto Sans', sans-serif;
+	margin-left: 2rem;
+	margin-bottom: 2em;
+	margin-top: 4em;
+	font-size: 1.1rem;
+	color: #060607;
+}
+
+.item {
+	margin-left: 3%;
+}
+
+.categorias{
+	display: grid;
+	grid-template-rows: 20rem 20rem 20rem;
+	grid-template-columns: 25rem 3fr;
+}
+
+.child-1, .child-2, .child-3 {
+	font-family: 'Noto Sans', sans-serif;
+	margin-bottom: 1.5em;
+	margin-top: 5%;
+}
+
+.paragraph {
+	font-family: 'Noto Sans', sans-serif;
+	margin-bottom: 1.5em;
+	margin-top: 1.5rem;
+	color: #060607;
+}
+
+.img {
+	margin-left: 2rem;
+	border-radius: 50%; 
+}
+
+.link1, .link2, .link3 {
+	font-family: 'Merriweather', serif;
+
+	padding:0.5rem;
+	font-size: 1.5rem;
+}
+
+.link1 {
+	display: block;
+	background-color:#054ba6;
+	border-radius: 0.8rem; 
+	width: 5.5rem;
+	color: #ced9e3;
+}
+
+.link2 {
+	display: block;
+	background-color:#054ba6;
+	border-radius: 0.8rem; 
+	width: 6rem;
+	color: #ced9e3;
+}
+
+.link3 {
+	display: block;
+	background-color:#054ba6;
+	border-radius: 0.8rem; 
+	width: 10rem;
+	color: #ced9e3;
+}
+
+@media(max-width: 360px) {
+	.header {
+		width: 37.5rem;
+		border-style: solid;
+		border-width: 2px;
+		background-color: #060607;
+	}
+
+	.title {
+		font-family: 'Merriweather', serif;
+		font-size:100px;
+		color: #ced9e3;
+		margin-left: 4.5rem;
+		margin-top: 1rem;
+	}
+
+	.perfil_descric_img {
+		display: grid;
+		grid-template-rows: 20rem 7.5rem;
+		grid-template-columns: 100%;
+	}
+
+	.perfil {
+		margin-left: 9.5rem;
+		margin-top: 2em;
+		border-radius: 50%; 
+	}
+
+	.descricao_perfil {
+		font-family: 'Noto Sans', sans-serif;
+		display: flex;
+		justify-content: center;
+		margin-left: 15rem;
+		margin-top: 1.5em;
+		color: #060607;
+	}
+
+	.categorias{
+		display: grid;
+		grid-template-rows: 20rem 25rem 20rem 25rem 20rem 25rem ;
+		grid-template-columns: 25rem;
+		margin-left: 7.5rem;
+	}
+
+	.child-1, .child-2, .child-3 {
+		font-family: 'Noto Sans', sans-serif;
+		margin-bottom: 1.5em;
+		margin-top: 5%;
+		margin-left: 1rem;
+	}
+
+	.link1 {
+		display: block;
+		background-color:#054ba6;
+		border-radius: 0.8rem; 
+		width: 5.5rem;
+		color: #ced9e3;
+		margin-left: 6.5rem;
+	}
+
+	.link2 {
+		display: block;
+		background-color:#054ba6;
+		border-radius: 0.8rem; 
+		width: 6rem;
+		color: #ced9e3;
+		margin-left: 6rem;
+	}
+
+	.link3 {
+		display: block;
+		background-color:#054ba6;
+		border-radius: 0.8rem; 
+		width: 10rem;
+		color: #ced9e3;
+		margin-left: 3.5rem;
+	}
+
+	.paragraph {
+		font-family: 'Noto Sans', sans-serif;
+		margin-bottom: 1.5em;
+		margin-top: 1.5rem;
+		color: #060607;
+		margin-right: 3rem;
+		text-align: justify;
+	}
+
+
+	
+}
+

@@ -1,0 +1,127 @@
+.header {
+	border-style: solid;
+	border-width: 2px; 
+	background-color: #060607;
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 40rem 1fr;
+}
+
+.title {
+	font-family: 'Merriweather', serif;
+	font-size: 100px;
+	color: #ced9e3;
+	margin-left: 2rem;
+	margin-top: 1rem;
+}
+
+.home {
+	margin-left: 83.5%;
+	margin-right: 4rem;
+	margin-top: 1rem;
+}
+
+.categoria_x {
+	font-family: 'Merriweather', serif;
+	font-size: 70px;
+	margin-top: 2rem;
+	margin-left: 2rem;
+	color: #060607;
+
+}
+
+.apres {
+	font-family: 'Noto Sans', sans-serif;
+	margin-left: 2rem;
+	margin-bottom: 2em;
+	margin-top: 2rem;
+	font-size: 1.1rem;
+	color: #060607;
+}
+
+.projetos {
+	display: grid;
+	grid-template-rows: 20rem 20rem;
+	grid-template-columns: 57rem 0.5fr;
+
+}
+
+.child-1, .child-2 {
+	margin-right: 2rem;
+	margin-top: 2.5rem;
+}
+
+.link1, .link2 {
+	font-family: 'Merriweather', serif;
+	margin-left: 2rem;
+	margin-bottom: 0.5rem;
+	font-size: 1.5rem;
+	padding:0.5rem;
+}
+
+.link1{
+	display: block;
+	background-color:#054ba6;
+	border-radius: 0.8rem;
+	width: 8.8rem;
+	color: #ced9e3;	
+}
+
+.link2{
+	display: block;
+	background-color:#054ba6;	
+	border-radius: 0.8rem;
+	width: 8rem;
+	color: #ced9e3;		
+}
+
+.paragraph {
+	font-family: 'Noto Sans', sans-serif;
+	margin-left: 2rem;
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+	color: #060607;
+}
+
+.img {
+	display: flex;
+	justify-content: flex-end;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+@media(max-width: 360px) {
+
+	.header {
+		display: grid;
+		border-style: solid;
+		border-width: 2px;
+		grid-template-rows: 100%;
+		grid-template-columns: 30rem 2fr; 
+		background-color: #060607;
+		width: 37.5rem;
+	}
+
+	.projetos {
+		display: grid;
+		grid-template-rows: 15rem 25rem 15rem 25rem;
+		grid-template-columns: 38rem;
+	}
+
+	.home {
+		margin-left: 0.75rem;
+	}
+
+
+	.paragraph {
+		font-family: 'Noto Sans', sans-serif;
+		margin-left: 2rem;
+		margin-top: 1.5rem;
+		color: #060607;
+		text-align: justify;
+	}
+
+	.img {
+		margin-left: 2rem;
+		margin-right: 3rem;
+	}
