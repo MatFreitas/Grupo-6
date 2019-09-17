@@ -6,6 +6,8 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
   <link href="assets/css/index.css" rel="stylesheet">
   <link href="assets/css/reset.css" rel="stylesheet">
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/index_script.js"></script>
   <meta charset='utf-8'/>
   <meta name='viewport' content='width=device-width, initial-case=1'>
 </head>
@@ -22,7 +24,15 @@
   <p class="apres">
    Aqui você encontra todos os seus projetos.
  </p>
- <div class="categorias">
+ <div class="categorias"> 
+  <!--{{#each portfolio}}
+    <p>{{this.categoria}}</p>
+    {{#each this.projetos}}
+      <p>this.descricao</p>
+    {{/each}}
+  {{/each}}
+  -->
+  
   <img class="img" src="https://picsum.photos/300/250/?random" alt="Categoria 1">
   <div class="child-1"> 
     <a class="link1" href="categoria.html">Cálculo</a> 
