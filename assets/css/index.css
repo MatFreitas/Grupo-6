@@ -47,7 +47,7 @@
 
 .categorias{
 	display: grid;
-	grid-template-rows: 20rem 20rem 20rem;
+	grid-template-rows: 20rem /*20rem 20rem*/;
 	grid-template-columns: 25rem 3fr;
 }
 

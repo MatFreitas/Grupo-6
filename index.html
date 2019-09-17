@@ -12,8 +12,45 @@
   <meta name='viewport' content='width=device-width, initial-case=1'>
 </head>
 <body>
-	<header class="header">
+<!--	<header class="header">
 		<h1 class="title">Portfólio</h1>
+  </header>
+  <div class="perfil_descric_img">
+    <div><img class="perfil" src="https://picsum.photos/300/250/?random" alt="Perfil"></div>
+    <p class="descricao_perfil">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+    </p>
+  </div>
+  <p class="apres">
+   Aqui você encontra todos os seus projetos.
+ </p>
+ <div class="categorias"> 
+  <!--{{#each portfolio}}
+    <p>{{this.categoria}}</p>
+    {{#each this.projetos}}
+      <p>this.descricao</p>
+    {{/each}}
+  {{/each}}
+  
+  
+  <img class="img" src="https://picsum.photos/300/250/?random" alt="Categoria 1">
+  <div class="child-1"> 
+    <a class="link1" href="categoria.html">Cálculo</a> 
+    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </div> 
+  <img class="img" src="https://picsum.photos/300/250/?random" alt="Categoria 2">
+  <div class="child-2"> 
+   <a class="link2" href="categoria.html">Fab Lab</a>
+   <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+ </div>
+ <img class="img" src="https://picsum.photos/300/250/?random" alt="Categoria 3">
+ <div class="child-3">
+   <a class="link3" href="categoria.html">Programação</a>
+   <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+ </div>-->
+
+  <header class="header">
+    <h1 class="title">Portfólio</h1>
   </header>
   <div class="perfil_descric_img">
     <div><img class="perfil" src="https://picsum.photos/300/250/?random" alt="Perfil"></div>
@@ -33,20 +70,17 @@
   {{/each}}
   -->
   
-  <img class="img" src="https://picsum.photos/300/250/?random" alt="Categoria 1">
+  
   <div class="child-1"> 
-    <a class="link1" href="categoria.html">Cálculo</a> 
-    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    {{#each portfolio}}
+    <img class="img" src="https://picsum.photos/300/250/?random" alt="Categoria 1">
+    <a class="link1" href="categoria.html">
+    {{this.categoria}}
+    </a>
+    <ul class="paragraph">
+    {{#each this.projetos}}
+    <p> {{this.titulo}} </p>
+  </ul>{{/each}}{{/each}} 
   </div> 
-  <img class="img" src="https://picsum.photos/300/250/?random" alt="Categoria 2">
-  <div class="child-2"> 
-   <a class="link2" href="categoria.html">Fab Lab</a>
-   <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
- </div>
- <img class="img" src="https://picsum.photos/300/250/?random" alt="Categoria 3">
- <div class="child-3">
-   <a class="link3" href="categoria.html">Programação</a>
-   <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
- </div>
 </div>
 </html>

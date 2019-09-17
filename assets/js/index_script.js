@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			console.log(data[key])
 	  	}
 			
-		coDesReplace('.paragraph', data)
+		coDesReplace('.child-1', data)
+		
+
   })
 })
