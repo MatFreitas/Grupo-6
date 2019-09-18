@@ -47,16 +47,18 @@
   <header class="header">
     <h1 class="title">Portfólio</h1>
     <img class="home"  src="assets/img/home" alt="Botão Home" style='width:10rem;height:10rem;'>
+      {{#each projetos}} 
   </header>
-  <h1 class="projeto_x">Modelagem</h1>
-  <div class="descricao">Descrição:</div>
+  <h1 class="projeto_x">{{this.titulo}}</h1>
+  <div class="descricao">descrição:</div>
   <p class="paragraph"></p> 
   <div class="materiais">
    <p class="item">Materiais:</p>
-   
-        
+   {{/each}}
+   {{each projetos}}
+       
      <ul class='filho-1'>
-      {{#each projetos}}
+
        <li class="topicos">{{this.materiais}}</li>   
      </ul>
    
