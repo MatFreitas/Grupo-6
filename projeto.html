@@ -12,7 +12,7 @@
   <script src="assets/js/projeto_script.js"></script>
 </head>
 <body>
-	<header class="header">
+	<!--<header class="header">
 		<h1 class="title">Portfólio</h1>
     <img class="home"  src="https://picsum.photos/100/90/?random" alt="Botão Home">
   </header>
@@ -43,6 +43,31 @@
       <img class="img_grp" src="https://picsum.photos/300/250/?random" alt="Membro 3">
       <div class="descricao_membros"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
     </div> 
+  </div>-->
+  <header class="header">
+    <h1 class="title">Portfólio</h1>
+    <img class="home"  src="https://picsum.photos/100/90/?random" alt="Botão Home">
+  </header>
+  <h1 class="projeto_x">Modelagem</h1>
+  <div class="descricao">Descrição:</div>
+  <p class="paragraph"></p> 
+  <div class="materiais">
+   <p class="item">Materiais:</p>
+   {{#each projetos}}
+   <div class="filho-1">  
+     <ul>
+       <li class="topicos">{{this.materiais}}</li>   
+     </ul>
+   </div>
+   {{/each}} </div>
+    <img class="img" src="https://picsum.photos/700/300/?random" alt="Materiais">
+   <div class="item">Integrantes do grupo: </div>
+   <div class="grupos">
+    <div class="child-1">
+      {{#each projetos}}
+      <img class="img_grp" src="https://picsum.photos/300/250/?random" alt="Membro 1"> 
+      <div class="descricao_membros">{{this.membros}}</div>
+    {{/each}}</div>
   </div> 
 </body>
 </html>

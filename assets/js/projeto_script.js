@@ -1,14 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+	let params = coDesExtract()
+    let value = params['key']
+    let value_linha = params['key2']
+
 	let db = coDesConnect('https://portfolio-engenharia1.firebaseio.com')
 
-	db.download('/portfolio/calculo/projetos', function(data) {
+	db.download('/', function(data) {
 
-		for(let key in data) {	
+		context = data['portfolio'][value]['projetos'][value_linha]
+		coDesReplace('.materiais', context)
 
-			console.log(data[key])
-			
-		coDesReplace('.paragraph', data[key])
-  	}
+		context = data['portfolio'][value]['projetos'][value_linha]
+		coDesReplace('.child-1', context)
+		
+
   })
 })

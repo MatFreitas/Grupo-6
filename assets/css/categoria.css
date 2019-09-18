@@ -41,7 +41,7 @@
 
 .projetos {
 	display: grid;
-	grid-template-rows: 20rem 20rem;
+	grid-template-rows: 20rem /*20rem*/;
 	grid-template-columns: 57rem 0.5fr;
 
 }
