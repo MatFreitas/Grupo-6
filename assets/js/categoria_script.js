@@ -7,9 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	db.download('/', function(data) {
 
+		
+
 		context = data['portfolio'][value]
 		coDesReplace('.child-1', context)
 		
-
+		context = data['portfolio'][value]
+		coDesReplace('.nova', context)
   })
 })

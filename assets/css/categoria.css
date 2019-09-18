@@ -4,7 +4,7 @@
 	background-color: #060607;
 	display: grid;
 	grid-template-rows: 100%;
-	grid-template-columns: 40rem 1fr;
+	grid-template-columns: 90% 1fr;
 }
 
 .title {
@@ -15,10 +15,8 @@
 	margin-top: 1rem;
 }
 
-.home {
-	margin-left: 83.5%;
-	margin-right: 4rem;
-	margin-top: 1rem;
+.home:hover {
+	padding:.5rem;
 
 }
 
@@ -64,7 +62,7 @@
 	display: block;
 	background-color:#054ba6;
 	border-radius: 0.8rem;
-	width: 8.8rem;
+	width: 30rem;
 	color: #ced9e3;	
 }
 
@@ -87,8 +85,8 @@
 .img {
 	display: flex;
 	justify-content: flex-end;
-	margin-left: 3rem;
-	margin-right: 3rem;
+	margin-left: 2rem;
+	margin-bottom: 7rem;
 }
 
 @media(max-width: 360px) {

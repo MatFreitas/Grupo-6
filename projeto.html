@@ -53,12 +53,13 @@
   <p class="paragraph"></p> 
   <div class="materiais">
    <p class="item">Materiais:</p>
-   {{#each projetos}}
-   <div class="filho-1">  
-     <ul>
+   
+        
+     <ul class='filho-1'>
+      {{#each projetos}}
        <li class="topicos">{{this.materiais}}</li>   
      </ul>
-   </div>
+   
    {{/each}} </div>
     <img class="img" src="assets/img/" alt="Materiais">
    <div class="item">Integrantes do grupo: </div>

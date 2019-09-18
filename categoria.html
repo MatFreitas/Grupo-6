@@ -35,19 +35,23 @@
 
   <header class="header">
     <h1 class="title">Portfólio</h1>
-    <img class="home"  src="assets/img/home.jpg" alt="Botão Home" style='width:10rem;height:10rem;'>
+    <a class="redireciona" href="index.html"><img class="home"  src="assets/img/home.png" alt="Botão Home" style='width:105px;height:105px;'></a>
   </header>
-  <h1 class="categoria_x">Cálculo</h1>
-
+  <div class='nova'>
+    {{#each portfolio}}
+  <h1 class="categoria_x">{{this.categoria}}</h1>
+  </div>
   <p class="apres">
-    Aqui se encontram os seus projetos de Cálculo.
+    Aqui se encontram os seus projetos de {{this.categoria}}.
   </p>
+  {{/each}}
+  </div>
   <div class="projetos">
     <div class="child-1">
       {{#each projetos}}
       <a class="link1" href="projeto.html?key={{@key}}">{{this.titulo}}</a>
       <p class="paragraph">{{this.descricao}}</p>
-      <img class="img" src="assets/img/" alt="Projeto 1"> 
+      <img class="img" src="assets/img/{{this.imagem}}" alt="{{this.titulo}}" style='width: 545px; height: 250px'> 
       {{/each}}  
     </div>
 </body>

@@ -53,34 +53,26 @@
     <h1 class="title">Portfólio</h1>
   </header>
   <div class="perfil_descric_img">
-    <div><img class="perfil" src="assets/img/Perfil.png" alt="Perfil"></div>
+    <div><img class="perfil" src="assets/img/Perfil.png" alt="Perfil" style='width:275px; height:275px'></div>
     <p class="descricao_perfil">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
     </p>
   </div>
-  <p class="apres">
-   Aqui você encontra todos os seus projetos.
- </p>
- <div class="categorias"> 
-  <!--{{#each portfolio}}
-    <p>{{this.categoria}}</p>
-    {{#each this.projetos}}
-      <p>this.descricao</p>
-    {{/each}}
-  {{/each}}
-  -->
   
-  
-  <div class="child-1"> 
-    {{#each portfolio}}
-    <img class="img" src="https://picsum.photos/300/250/?random" alt="Categoria 1">
-    <a class="link1" href="categoria.html?key={{@key}}">
-    {{this.categoria}}
-    </a>
-    <ul class="paragraph">
-    {{#each this.projetos}}
-    <p> {{this.titulo}} </p>
-  </ul>{{/each}}{{/each}} 
-  </div> 
+ <div class='nova'>
+  {{#each portfolio}}
+   <div class="categorias"> 
+      <img class="img" src="assets/img/{{this.imagem}}" alt="{{this.titulo}}" style='width:325px; height:250px'>
+    <div class="child-1"> 
+      <a class="link1" href="categoria.html?key={{@key}}">
+      {{this.categoria}}
+      </a>
+      <ul class="paragraph">
+      {{#each this.projetos}}
+      <p> {{this.titulo}} </p>
+    </ul>{{/each}}{{/each}} 
+    </div> 
+  </div>
 </div>
+</body>
 </html>

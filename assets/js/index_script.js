@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			console.log(data[key])
 	  	}
 			
-		coDesReplace('.child-1', data)
-		
+		coDesReplace('.nova', data)
+
 
   })
 })
