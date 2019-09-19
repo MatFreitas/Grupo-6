@@ -38,21 +38,19 @@
     <a class="redireciona" href="index.html"><img class="home"  src="assets/img/home.png" alt="Botão Home" style='width:105px;height:105px;'></a>
   </header>
   <div class='nova'>
-    {{#each portfolio}}
   <h1 class="categoria_x">{{this.categoria}}</h1>
-  </div>
   <p class="apres">
     Aqui se encontram os seus projetos de {{this.categoria}}.
-  </p>
-  {{/each}}
+  </p></div>
   </div>
   <div class="projetos">
+    {{#each projetos}}
     <div class="child-1">
-      {{#each projetos}}
-      <a class="link1" href="projeto.html?key={{@key}}">{{this.titulo}}</a>
-      <p class="paragraph">{{this.descricao}}</p>
-      <img class="img" src="assets/img/{{this.imagem}}" alt="{{this.titulo}}" style='width: 545px; height: 250px'> 
-      {{/each}}  
+      <a class="link1" href="projeto.html?key={{@key}}&key1={{../categoria}}">{{this.titulo}}</a>
+      <p class="paragraph">{{this.descricao}}</p>  
     </div>
+     <img class="img" src="assets/img/{{this.imagem}}" alt="{{this.titulo}}" style='width: 545px; height: 250px'> 
+     {{/each}} 
+  </div>
 </body>
 </html>

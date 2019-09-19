@@ -14,18 +14,19 @@
 
 .perfil_descric_img {
 	display: grid;
-	grid-template-rows: 20rem 2.5rem;
+	grid-template-rows: 20rem 17.5rem;
 	grid-template-columns: 100%	;
 }
 
 .perfil {
-	margin-left: 38%;
+	margin-left: 40%;
 	margin-top: 2em;
 	border-radius: 50%; 
 }
 
 .descricao_perfil {
 	font-family: 'Noto Sans', sans-serif;
+	font-size: 3rem;
 	display: flex;
 	justify-content: center;
 	margin-top: 1.5em;
@@ -47,19 +48,19 @@
 
 .categorias{
 	display: grid;
-	grid-template-rows: 20rem;
+	grid-template-rows: 30rem 30rem 30rem;
 	grid-template-columns: 25rem 3fr;
 }
 
 .child-1/*, .child-2, .child-3*/ {
 	font-family: 'Noto Sans', sans-serif;
-	margin-bottom: 1.5em;
 	margin-top: 5%;
 }
 
 .paragraph {
 	font-family: 'Noto Sans', sans-serif;
 	/*margin-bottom: 1.5em;*/
+	font-size: 1.3rem;
 	margin-top: 1.5rem;
 	color: #060607;
 }
@@ -73,7 +74,7 @@
 	font-family: 'Merriweather', serif;
 
 	padding:0.5rem;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 }
 
 .link1 {
@@ -81,6 +82,7 @@
 	background-color:#054ba6;
 	border-radius: 0.8rem; 
 	padding: .5rem;
+	margin-right:25rem;
 	color: #ced9e3;
 }
 
@@ -102,7 +104,7 @@
 
 @media(max-width: 360px) {
 	.header {
-		width: 37.5rem;
+		width: 39rem;
 		border-style: solid;
 		border-width: 2px;
 		background-color: #060607;
@@ -118,8 +120,8 @@
 
 	.perfil_descric_img {
 		display: grid;
-		grid-template-rows: 20rem 7.5rem;
-		grid-template-columns: 100%;
+		grid-template-rows: 20rem 17rem;
+		grid-template-columns: 361px;
 	}
 
 	.perfil {
@@ -131,6 +133,7 @@
 	.descricao_perfil {
 		font-family: 'Noto Sans', sans-serif;
 		display: flex;
+		font-size:2rem;
 		justify-content: center;
 		margin-left: 15rem;
 		margin-top: 1.5em;
@@ -142,9 +145,10 @@
 		grid-template-rows: 20rem 25rem 20rem 25rem 20rem 25rem ;
 		grid-template-columns: 25rem;
 		margin-left: 7.5rem;
+
 	}
 
-	.child-1, .child-2, .child-3 {
+	.child-1/*, .child-2, .child-3*/ {
 		font-family: 'Noto Sans', sans-serif;
 		margin-bottom: 1.5em;
 		margin-top: 5%;
@@ -155,12 +159,12 @@
 		display: block;
 		background-color:#054ba6;
 		border-radius: 0.8rem; 
-		width: 5.5rem;
+		width: 19.5rem;
 		color: #ced9e3;
-		margin-left: 6.5rem;
+		justify-content: center;
 	}
 
-	.link2 {
+	/*.link2 {
 		display: block;
 		background-color:#054ba6;
 		border-radius: 0.8rem; 
@@ -176,7 +180,7 @@
 		width: 10rem;
 		color: #ced9e3;
 		margin-left: 3.5rem;
-	}
+	}*/
 
 	.paragraph {
 		font-family: 'Noto Sans', sans-serif;
@@ -184,8 +188,13 @@
 		margin-top: 1.5rem;
 		color: #060607;
 		margin-right: 3rem;
-		text-align: justify;
+		text-align: left;
 	}
+
+	.img {
+		margin-left: .5rem;
+	}
+
 
 	
 }

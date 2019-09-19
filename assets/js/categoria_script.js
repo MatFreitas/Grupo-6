@@ -7,12 +7,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	db.download('/', function(data) {
 
-		
+		for(let key in data) {	
+
+			console.log(data[key])
+	  	}
 
 		context = data['portfolio'][value]
-		coDesReplace('.child-1', context)
-		
+		coDesReplace('.categoria_x', context)
+
+
 		context = data['portfolio'][value]
-		coDesReplace('.nova', context)
+		coDesReplace('.apres', context)
+
+		context = data['portfolio'][value]
+	    context['categoria'] = value
+		coDesReplace('.projetos', context)
+	
   })
 })

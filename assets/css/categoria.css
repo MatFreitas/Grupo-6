@@ -32,29 +32,29 @@
 .apres {
 	font-family: 'Noto Sans', sans-serif;
 	margin-left: 2rem;
-	margin-bottom: 2em;
+	margin-bottom: 7rem;
 	margin-top: 2rem;
-	font-size: 1.1rem;
+	font-size: 1.5rem;
 	color: #060607;
 }
 
 .projetos {
 	display: grid;
-	grid-template-rows: 20rem /*20rem*/;
-	grid-template-columns: 57rem 0.5fr;
+	grid-template-rows: 30rem 30rem 30rem 30rem;
+	grid-template-columns: 60% 0.5fr;
 
 }
 
-.child-1, .child-2 {
+.child-1/*, .child-2*/ {
 	margin-right: 2rem;
 	margin-top: 2.5rem;
 }
 
-.link1, .link2 {
+.link1/*, .link2*/ {
 	font-family: 'Merriweather', serif;
 	margin-left: 2rem;
 	margin-bottom: 0.5rem;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	padding:0.5rem;
 }
 
@@ -62,20 +62,21 @@
 	display: block;
 	background-color:#054ba6;
 	border-radius: 0.8rem;
-	width: 30rem;
+	width: 50rem;
 	color: #ced9e3;	
 }
 
-.link2{
+/*.link2{
 	display: block;
 	background-color:#054ba6;	
 	border-radius: 0.8rem;
 	width: 8rem;
 	color: #ced9e3;		
-}
+}*/
 
 .paragraph {
 	font-family: 'Noto Sans', sans-serif;
+	font-size: 1.5rem;
 	margin-left: 2rem;
 	margin-bottom: 1.5rem;
 	margin-top: 1.5rem;
@@ -87,6 +88,7 @@
 	justify-content: flex-end;
 	margin-left: 2rem;
 	margin-bottom: 7rem;
+	border-radius: 25px;
 }
 
 @media(max-width: 360px) {
@@ -98,7 +100,7 @@
 		grid-template-rows: 100%;
 		grid-template-columns: 30rem 2fr; 
 		background-color: #060607;
-		width: 37.5rem;
+		width: 39rem;
 	}
 
 	.projetos {
@@ -108,7 +110,7 @@
 	}
 
 	.home {
-		margin-left: 0.75rem;
+		margin-left: 1.25rem;
 	}
 
 
@@ -123,5 +125,9 @@
 	.img {
 		margin-left: 2rem;
 		margin-right: 3rem;
+	}
+
+	.link1 {
+		width: 30rem;
 	}
 }

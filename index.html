@@ -49,29 +49,32 @@
    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
  </div>-->
 
-  <header class="header">
+  <--<header class="header">
     <h1 class="title">Portfólio</h1>
   </header>
   <div class="perfil_descric_img">
     <div><img class="perfil" src="assets/img/Perfil.png" alt="Perfil" style='width:275px; height:275px'></div>
     <p class="descricao_perfil">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      Gustavo Freitas David 
     </p>
   </div>
   
  <div class='nova'>
-  {{#each portfolio}}
+  
    <div class="categorias"> 
+    {{#each portfolio}}
       <img class="img" src="assets/img/{{this.imagem}}" alt="{{this.titulo}}" style='width:325px; height:250px'>
-    <div class="child-1"> 
+      <div class="child-1"> 
       <a class="link1" href="categoria.html?key={{@key}}">
       {{this.categoria}}
       </a>
       <ul class="paragraph">
       {{#each this.projetos}}
-      <p> {{this.titulo}} </p>
-    </ul>{{/each}}{{/each}} 
-    </div> 
+      <li> {{this.titulo}} </li>
+      {{/each}}
+    </ul>
+    </div>
+    {{/each}}  
   </div>
 </div>
 </body>

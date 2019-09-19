@@ -46,31 +46,28 @@
   </div>-->
   <header class="header">
     <h1 class="title">Portfólio</h1>
-    <img class="home"  src="assets/img/home" alt="Botão Home" style='width:10rem;height:10rem;'>
-      {{#each projetos}} 
+    <a class="redireciona" href="index.html"><img class="home"  src="assets/img/home.png" alt="Botão Home" style='width:105px;height:105px;'></a>
   </header>
   <h1 class="projeto_x">{{this.titulo}}</h1>
-  <div class="descricao">descrição:</div>
-  <p class="paragraph"></p> 
-  <div class="materiais">
+  <div class="descricao">Descrição:</div>
+  <p class="paragraph">{{this.descricao}}</p> 
+  
    <p class="item">Materiais:</p>
-   {{/each}}
-   {{each projetos}}
+   <div class="materiais">
+   
        
      <ul class='filho-1'>
-
        <li class="topicos">{{this.materiais}}</li>   
      </ul>
    
-   {{/each}} </div>
-    <img class="img" src="assets/img/" alt="Materiais">
+    <div class="nova">    
+    <img class="img" src="assets/img/{{this.imagem_proj}}" alt="Materiais" style='width:500px; height:325px'>
+  </div></div>
    <div class="item">Integrantes do grupo: </div>
    <div class="grupos">
     <div class="child-1">
-      {{#each projetos}}
-      <img class="img_grp" src="assets/img/" alt="Membro 1"> 
-      <div class="descricao_membros">{{this.membros}}</div>
-    {{/each}}</div>
+      <div class="descricao_membros">{{this.grupo}}</div>
+   </div>
   </div> 
 </body>
 </html>
